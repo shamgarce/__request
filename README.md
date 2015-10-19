@@ -1,7 +1,7 @@
 URI
 =======
 
-The `League\Uri` package provides simple and intuitive classes to create and manage URIs in PHP.
+The `shampeak/request` package provides simple and intuitive classes to create and manage URIs in PHP.
 
 Highlights
 ------
@@ -23,19 +23,19 @@ System Requirements
 
 You need:
 
-- **PHP >= 5.5.0** or **HHVM >= 3.6**, but the latest stable version of PHP/HHVM is recommended
+- **PHP >= 5.5.0** , but the latest stable version of PHP is recommended
 - the `mbstring` extension
-- the `intl` extension
+- "league/url": "^3.3"
 
 To use the library.
 
 Install
 -------
 
-Install `League\Uri` using Composer.
+Install `shampeak\request` using Composer.
 
 ```
-$ composer require league/uri
+$ composer require shampeak/request
 ```
 
 Testing
@@ -56,12 +56,6 @@ Security
 -------
 
 If you discover any security related issues, please email nyamsprod@gmail.com instead of using the issue tracker.
-
-Credits
--------
-
-- [ignace nyamagana butera](https://github.com/nyamsprod)
-- [All Contributors](https://github.com/thephpleague/uri/contributors)
 
 License
 -------
