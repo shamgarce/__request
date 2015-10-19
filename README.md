@@ -1,0 +1,73 @@
+URI
+=======
+
+The `League\Uri` package provides simple and intuitive classes to create and manage URIs in PHP.
+
+Highlights
+------
+
+- Simple API
+- [RFC3986](http://tools.ietf.org/html/rfc3986) compliant
+- Implements the `UriInterface` from [PSR-7][]
+- Fully documented
+- Framework Agnostic
+- Composer ready, [PSR-2][] and [PSR-4][] compliant
+
+Documentation
+------
+
+Full documentation can be found at [url.thephpleague.com](http://url.thephpleague.com). Contribute to this documentation in the [gh-pages](https://github.com/thephpleague/url/tree/gh-pages) branch
+
+System Requirements
+-------
+
+You need:
+
+- **PHP >= 5.5.0** or **HHVM >= 3.6**, but the latest stable version of PHP/HHVM is recommended
+- the `mbstring` extension
+- the `intl` extension
+
+To use the library.
+
+Install
+-------
+
+Install `League\Uri` using Composer.
+
+```
+$ composer require league/uri
+```
+
+Testing
+-------
+
+`League\Uri` has a [PHPUnit](https://phpunit.de) test suite and a coding style compliance test suite using [PHP CS Fixer](http://cs.sensiolabs.org/). To run the tests, run the following command from the project folder.
+
+``` bash
+$ composer test
+```
+
+Contributing
+-------
+
+Contributions are welcome and will be fully credited. Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details.
+
+Security
+-------
+
+If you discover any security related issues, please email nyamsprod@gmail.com instead of using the issue tracker.
+
+Credits
+-------
+
+- [ignace nyamagana butera](https://github.com/nyamsprod)
+- [All Contributors](https://github.com/thephpleague/uri/contributors)
+
+License
+-------
+
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
+
+[PSR-2]: http://www.php-fig.org/psr/psr-2/
+[PSR-4]: http://www.php-fig.org/psr/psr-4/
+[PSR-7]: http://www.php-fig.org/psr/psr-7/
