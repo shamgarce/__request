@@ -36,16 +36,18 @@ $RECYCLE.BIN/
 .Trashes
 
 # Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
 Network Trash Folder
 Temporary Items
-.apdisk
-.diea
-.svn
 phpMyAdmin
 vendor
+composer.lock
 
+.AppleDB
+.AppleDesktop
+.apdisk
+.svn
+.gitattributes
+.idea
 
 # editplus
 *.bak
