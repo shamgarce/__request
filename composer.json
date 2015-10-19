@@ -1,12 +1,9 @@
 {
-    "name": "meta/silk",
+    "name": "shampeak/request",
     "description": "another e-commerce website",
     "keywords": [
-        "silk",
-        "online shop",
-        "good"
     ],
-    "time": "2014-12-30",
+    "time": "2015-10-19",
     "license": "MIT",
     "authors": [
         {

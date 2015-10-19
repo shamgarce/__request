@@ -39,14 +39,14 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 phpMyAdmin
-vendor
-composer.lock
 
 .AppleDB
 .AppleDesktop
 .apdisk
 .svn
-.gitattributes
+
+vendor
+composer.lock
 .idea
 
 # editplus
