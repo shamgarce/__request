@@ -76,6 +76,8 @@ class Request
      */
     public $cookies;
 
+    public $url;
+
     /**
      * Constructor
      * @param \Sham\Environment $env
