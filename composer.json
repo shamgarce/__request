@@ -1,23 +1,19 @@
 {
     "name": "shampeak/request",
-    "description": "another e-commerce website",
-    "keywords": [
-    ],
-    "time": "2015-10-19",
+    "description": "dev",
+    "type": "package",
     "license": "MIT",
     "authors": [
         {
-            "name": "Sham",
-            "email": "shampeak@sina.com",
-            "homepage": "http://www.Gracephp.com",
-            "role": "Engineer"
+            "name": "shampeak",
+            "email": "shampeak@sina.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php" : ">=5.5.9",
         "ext-mbstring" : "*",
-        "league/url": "^3.3",
-        "shampeak/request":"*"
+        "league/url": "^3.3"
     },
     "require-dev": {
         "phpunit/phpunit" : "^4.0"
