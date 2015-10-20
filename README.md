@@ -51,7 +51,9 @@ Use
 -------
 
 ```
-$req = new \Sham\Http\Request(Sham\Environment::getInstance());
+$req = new Sham\Http\Request(Sham\Environment::getInstance());
+$req = new Sham\Request() ;
+
 ```
 
 
@@ -63,7 +65,7 @@ Contributions are welcome and will be fully credited. Please see [CONTRIBUTING](
 Security
 -------
 
-If you discover any security related issues, please email nyamsprod@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email shampeak@sina.com instead of using the issue tracker.
 
 License
 -------
