@@ -24,7 +24,11 @@
         }
     },
     "repositories": [
-        {"type": "composer", "url": "http://packagist.phpcomposer.com"},
-        {"packagist": false}
+        {
+            "type": "composer", "url": "http://packagist.phpcomposer.com"
+        },
+        {
+            "packagist": false
+        }
     ]
 }
