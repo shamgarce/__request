@@ -51,8 +51,10 @@ Use
 -------
 
 ```
-$req = new Sham\Http\Request(Sham\Environment::getInstance());
 $req = new Sham\Request() ;
+$get = $req->get();       //GET数据
+$path1 = $req->getPath(); //path数据
+$path2 = $req->getPath()->toArray();  //path数组
 
 ```
 
