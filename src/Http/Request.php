@@ -31,6 +31,7 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 namespace Sham\Http;
+use League\Url\UrlImmutable;
 
 /**
  * Slim HTTP Request
@@ -87,6 +88,7 @@ class Request
         $this->env = $env;
         $this->headers = new \Sham\Http\Headers(\Sham\Http\Headers::extract($env));
         //$this->cookies = new \Sham\Helper\Set(\Sham\Http\Util::parseCookieHeader($env['HTTP_COOKIE']));
+        $this->url = UrlImmutable::createFromServer($_SERVER);
     }
 
     /**
@@ -221,9 +223,13 @@ class Request
         if (!isset($this->env['sham.request.query_hash'])) {
             $output = array();
             if (function_exists('mb_parse_str') && !isset($this->env['sham.tests.ignore_multibyte'])) {
-                mb_parse_str($this->env['QUERY_STRING'], $output);
+                //mb_parse_str($this->env['QUERY_STRING'], $output);
+                mb_parse_str($this->url->getQuery(), $output);
+
             } else {
-                parse_str($this->env['QUERY_STRING'], $output);
+                //parse_str($this->env['QUERY_STRING'], $output);
+                parse_str($this->url->getQuery(), $output);
+
             }
             $this->env['sham.request.query_hash'] = Util::stripSlashesIfMagicQuotes($output);
         }
@@ -539,7 +545,8 @@ class Request
      */
     public function getPath()
     {
-        return $this->getScriptName() . $this->getPathInfo();
+        return $this->url->getPath();;
+        //return $this->getScriptName() . $this->getPathInfo();
     }
 
     /**

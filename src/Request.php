@@ -13,7 +13,7 @@ class Request extends Http\Request
         $env = Environment::getInstance();
         $this->env = $env;
         $this->headers = new \Sham\Http\Headers(\Sham\Http\Headers::extract($env));
-        $this->url = UrlImmutable::createFromServer($_SERVER);
+        $this->url = UrlImmutable::createFromServer($_SERVER);;
     }
 
 }

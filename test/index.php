@@ -7,14 +7,18 @@ include("../vendor/autoload.php");
 
 $req = new Sham\Request() ;
 
-//$query = $req->url->getQuery();
-//$path = $req->url->getPath();
-//
-//print_r($req->url);
+//$get = $req->get();
+//$path1 = $req->getPath();
+//$path2 = $req->getPath()->toArray();
+//echo '<pre>';
+//print_r($get);
+//echo $path1.'<br>';
+//print_r($path2);
+//echo '</pre>';
+//exit;
 
-//
-//
-//print_r($req->get());
 include ('view_test.php');
+
+
 
 exit;

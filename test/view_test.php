@@ -237,7 +237,40 @@ body {
   </tr>
   <tr>
     <td bgcolor="#FFFFFF">$req-&gt;getPath();<br /></td>
-    <td bgcolor="#FFFFFF"><?=$req->getPath();?></td>
+    <td bgcolor="#FFFFFF">
+	<?=$req->getPath();?>
+    
+
+    
+    </td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">$req-&gt;getPath()-&gt;toArray();</td>
+    <td bgcolor="#FFFFFF"><pre><?php print_r($req->getPath()->toArray());?></pre></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
     <td bgcolor="#FFFFFF">&nbsp;</td>
     <td bgcolor="#FFFFFF">&nbsp;</td>
     <td bgcolor="#FFFFFF">&nbsp;</td>
@@ -313,16 +346,44 @@ body {
     <td bgcolor="#FFFFFF">&nbsp;</td>
   </tr>
   <tr>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">echo $req-&gt;url-&gt;getQuery();</td>
+    <td bgcolor="#FFFFFF"><?=$req->url->getQuery();?></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
     <td bgcolor="#FFFFFF"><pre>$query&#32;=&#32;$req-&gt;url-&gt;getQuery();<br />
     </pre></td>
-    <td bgcolor="#FFFFFF"><pre><?php print_r($req->url->getQuery());?></pre></td>
+    <td bgcolor="#FFFFFF"><pre><?php print_r($req->url->getQuery()->toArray());?></pre></td>
     <td bgcolor="#FFFFFF">&nbsp;</td>
     <td bgcolor="#FFFFFF">&nbsp;</td>
     <td bgcolor="#FFFFFF">&nbsp;</td>
   </tr>
   <tr>
     <td bgcolor="#FFFFFF">$path&#32;=&#32;$req-&gt;url-&gt;getPath();</td>
-    <td bgcolor="#FFFFFF"><pre><?php print_r($req->url->getPath());?></pre></td>
+    <td bgcolor="#FFFFFF"><pre><?php print_r($req->url->getPath()->toArray());?></pre></td>
     <td bgcolor="#FFFFFF">&nbsp;</td>
     <td bgcolor="#FFFFFF">&nbsp;</td>
     <td bgcolor="#FFFFFF">&nbsp;</td>
