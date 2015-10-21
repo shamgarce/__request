@@ -3,9 +3,7 @@
 include("../vendor/autoload.php");
 
 
-$env = Sham\Environment::getInstance();
-
-$req = new Sham\Request ;
+$req = Sham\Request::getInstance();
 
 //foreach($env as $value){
 //      var_dump($value);

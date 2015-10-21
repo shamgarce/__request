@@ -5,8 +5,8 @@ include("../vendor/autoload.php");
 
 
 
-$req = new Sham\Request() ;
-
+//$req = new Sham\Request() ;
+$req = Sham\Request::getInstance();
 //$get = $req->get();
 //$path1 = $req->getPath();
 //$path2 = $req->getPath()->toArray();

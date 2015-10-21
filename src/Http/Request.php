@@ -79,16 +79,26 @@ class Request
 
     public $url;
 
+    private static $request;
+
     /**
      * Constructor
      * @param \Sham\Environment $env
      */
-    public function __construct(\Sham\Environment $env)
+    private function __construct()
     {
-        $this->env = $env;
-        $this->headers = new \Sham\Http\Headers(\Sham\Http\Headers::extract($env));
+        $this->env = \Sham\Environment::getInstance();
+        $this->headers = new \Sham\Http\Headers(\Sham\Http\Headers::extract($this->env));
         //$this->cookies = new \Sham\Helper\Set(\Sham\Http\Util::parseCookieHeader($env['HTTP_COOKIE']));
         $this->url = UrlImmutable::createFromServer($_SERVER);
+    }
+
+    public static function getInstance($refresh = false)
+    {
+        if (is_null(self::$request) || $refresh) {
+            self::$request = new self();
+        }
+        return self::$request;
     }
 
     /**
